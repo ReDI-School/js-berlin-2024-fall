@@ -1,8 +1,8 @@
 <!-- .slide: id="lesson1" -->
 
-# Basic Frontend - Sprint 2024
+# Basic Frontend - Fall 2024
 
-Lesson 1, Thursday, 2024-03-14
+Lesson 1, Thursday, 2024-09-11
 
 ---
 
@@ -173,6 +173,8 @@ Abdullah and Owen volunteered to pay for the tickets. Use JavaScript to compute 
 <!-- .element: class="fragment" -->
 
 ---
+
+<!-- .slide: id="basic-data-types" -->
 
 ### Data Types
 
