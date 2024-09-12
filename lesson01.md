@@ -169,7 +169,7 @@ How many people are going to the cinema in total? Enter it to JavaScript Console
 A ticket to watch the movie costs 8€, let JavaScript compute how much we have to pay in total.
 <!-- .element: class="fragment" -->
 
-Abdullah and Owen volunteered to pay for the tickets. Use JavaScript to compute how much each has to pay.
+Alan and Ada volunteered to pay for the tickets. Use JavaScript to compute how much each has to pay.
 <!-- .element: class="fragment" -->
 
 ---
