@@ -434,7 +434,9 @@ Ada and Alan volunteered to pay for the tickets. Use JavaScript to compute how m
 
 ```js
 let totalPrice = 50; // from the task above
-let discountedPrice = totalPrice * 0.9;
+let discount = 0.1; // 10 percent discount
+let discountedPriceMultiplier = 1 - discount;
+let discountedPrice = totalPrice * discountedPriceMultiplier;
 let budget = 40;
 let canPay = budget >= discountedPrice;
 ```
