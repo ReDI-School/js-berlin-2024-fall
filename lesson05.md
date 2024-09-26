@@ -368,7 +368,7 @@ let butterPrice = 1;
 
 ---
 
-### Even more tasks
+### Homework
 
 You're a developer in a bookstore. Can you finish all the tasks in this JavaScript project?
 
