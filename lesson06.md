@@ -279,7 +279,7 @@ function sum(parameter1, parameter2, parameter3) {
   console.log(parameter1 + parameter2 + parameter3);
 }
 
-introduce(1, 2, 3);
+sum(1, 2, 3);
 ```
 
 Each argument will be assigned to the corresponding parameter in order, from left to right
