@@ -250,51 +250,6 @@ console.log('The car has undefined wheels');
 
 ---
 
-### Task: part 1
-
-Start with the `myInfo` object you created in the earlier task that contains your name and favorite food.
-
-Write a function that takes that object as a parameter and introduces that person using `console.log`.
-
-Example output:
-
-```js
-introducePerson(myInfo);
-// "Hi, my name is Alan and my favorite food is Pizza"
-```
-
----
-
-### Task: part 2
-
-Now create another object called `friendInfo` with the same properties as `myInfo`.
-
-Introduce your friend using the same function you created in part 1.
-
-Example output:
-
-```js
-introducePerson(friendInfo);
-// "Hi, my name is Ada and my favorite food is Pasta"
-```
-
----
-
-### Task: part 3
-
-Create a function that takes two "person" objects. Compare their ages, then use `console.log` to print who is older of the two.
-
-You may need to first add an "age" property to your objects if you don't have it already.
-
-Example output:
-
-```js
-whoIsOlder(myInfo, friendInfo);
-// "Ada is older"
-```
-
----
-
 ### Object Properties
 
 So objects consist of key-value pairs (also called properties).
@@ -383,15 +338,60 @@ You've been using objects and methods this whole time!
 
 ---
 
-### Practice
+### Task: part 1
 
-Using your "me" object, create a method to introduce yourself (using console.log). Create a object within that represents your address.
+Start with the `myInfo` object you created in the earlier task that contains your name and favorite food.
+
+Write a function that takes that object as a parameter and introduces that person using `console.log`.
+
+Example output:
 
 ```js
-me.introduce();
+introducePerson(myInfo);
+// "Hi, my name is Alan and my favorite food is Pizza"
+```
+
+---
+
+### Task: part 2
+
+Now create another object called `friendInfo` with the same properties as `myInfo`.
+
+Introduce your friend using the same function you created in part 1.
+
+Example output:
+
+```js
+introducePerson(friendInfo);
+// "Hi, my name is Ada and my favorite food is Pasta"
+```
+
+---
+
+### Task: part 3
+
+Create a function that takes two "person" objects. Compare their ages, then use `console.log` to print who is older of the two.
+
+You may need to first add an "age" property to your objects if you don't have it already.
+
+Example output:
+
+```js
+whoIsOlder(myInfo, friendInfo);
+// "Ada is older"
+```
+
+---
+
+### Task 4
+
+Create a method to introduce yourself (using console.log). Create a object within that represents your address.
+
+```js
+myInfo.introduce();
 // "Hi, my name is Grace"
-console.log(me.address.city); // "Berlin"
-console.log(me.address.country); // "Germany"
+console.log(myInfo.address.city); // "Berlin"
+console.log(myInfo.address.country); // "Germany"
 ```
 
 ---
