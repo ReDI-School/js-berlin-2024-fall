@@ -243,7 +243,7 @@ console.log('The car has ' + car.wheels + ' wheels');
 * What's the result?
 
 ```js
-console.log('The car has undefined wheels');
+The car has undefined wheels
 ```
 <!-- .element: class="fragment" -->
 
@@ -290,7 +290,7 @@ let myCity = me.address.city;
 ```js
 let me = {
     name: "Grace",
-    greeting: function() {
+    greeting: function(dayOfWeek) {
         if (dayOfWeek === "Monday") {
             return "Get out of my face";
         } else {
