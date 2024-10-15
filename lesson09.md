@@ -176,10 +176,10 @@ Let's try some properties, see what happens:
 ```js
 let priceDiv = document.getElementById("totalPrice");
 // choose from below:
-// priceDiv.textContent = "Hi from JavaScript";
-// priceDiv.hidden = true;
-// priceDiv.style.backgroundColor = "red";
-// priceDiv.remove();
+priceDiv.textContent = "Hi from JavaScript";
+priceDiv.hidden = true;
+priceDiv.style.backgroundColor = "red";
+priceDiv.remove();
 ```
 
 ---
@@ -203,6 +203,14 @@ let priceDiv = document.getElementById("totalPrice");
 </html>
 
 ```
+
+---
+
+### How to access the DOM
+* Add `id` to your html element
+* create a variable for the element using `document.getElementById`
+* read or change any properties of the element using the variable
+
 
 ---
 
