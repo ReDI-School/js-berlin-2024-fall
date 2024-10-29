@@ -242,7 +242,7 @@ console.log(friends.length); // 4
 friends.pop();
 
 console.log(friends.length); // 3
-console.log(friends[4]); // undefined
+console.log(friends[3]); // undefined
 ```
 
 ---
@@ -339,7 +339,7 @@ Congratulations Bjarne! You pay nothing
 
 ### BONUS: Task 4
 
-Create a `function` called `cinemaCost` that takes an array of friends and outputs the same as in Task 1. The function must work for any amount of friends:
+Create a `function` called `cinemaCost` that takes an array of friends and outputs the same as in Task 3. The function must work for any amount of friends:
 
 ```js
 function cinemaCost(friends) {
