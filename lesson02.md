@@ -16,38 +16,48 @@ What did we talk about last lesson?
 
 `F12` is the magic key
 
+<!-- .slide: style="font-size:80%" -->
+
+- Alternatively, `opt + cmd + C` (Mac) / `ctrl + shift + C` (Windows)
+
+- Or right click on browser viewport and choose "Inspect"
+
 ---
 
 ### Recap: data types
 
 Number:
+
 ```js
-42
--3.1415
+42;
+
+3.1415;
 ```
 
+We can also do computation, using operators:
 
-We can also do computation
 <!-- .element: class="fragment" -->
 
 ```js
-1 + 1
+1 + 1;
 
-10 / 5
+10 / 5;
 
-5 ** 3
+5 ** 3;
 ```
-<!-- .element: class="fragment" -->
 
+<!-- .element: class="fragment" -->
 
 ---
 
 ### Recap: data types
 
 String:
+
 ```js
-"Alan"
-'Berlin'
+"Alan";
+
+"Berlin";
 ```
 
 ---
@@ -57,7 +67,7 @@ String:
 The addition operator (`+`) can be used to combine (concatenate) two strings:
 
 ```js
-"a" + "b"    // results: "ab"
+"a" + "b"; // results: "ab"
 ```
 
 ---
@@ -67,8 +77,9 @@ The addition operator (`+`) can be used to combine (concatenate) two strings:
 The addition operator can be used on Strings and Numbers:
 
 ```js
-1 + 1                // is 2
-"hello" + " world"   // is "hello world"
+1 + 1; // is 2
+
+"hello" + " world"; // is "hello world"
 ```
 
 ---
@@ -76,8 +87,9 @@ The addition operator can be used on Strings and Numbers:
 ### Importance of data types
 
 ```js
-1 + 1        // is 2
-"1" + "1"    // is "11"
+1 + 1; // is 2
+
+"1" + "1"; // is "11"
 ```
 
 It is important to select the appropriate data type for your data, as the behavior of operators in JavaScript varies depending on the data type used.
@@ -86,7 +98,7 @@ It is important to select the appropriate data type for your data, as the behavi
 
 ### Small exercise
 
-use the `+` operator to combine multiple strings to generate the following string. Use your name and favorite food:
+Use the `+` operator to combine multiple strings to generate the following string. Use your name and favorite food:
 
 `Hello, my name is + (name) + and I like + (food)`
 
@@ -100,8 +112,8 @@ We shouldn't use operators (like `-`, `/`, `*`) on strings. While JavaScript all
 
 ### Data Type: Boolean
 
-* **Boolean** describes a yes/no situation
-* in JavaScript, we use `true` or `false`
+- **Boolean** describes a yes/no situation
+- In JavaScript, we use `true` or `false`
 
 ---
 
@@ -109,41 +121,12 @@ We shouldn't use operators (like `-`, `/`, `*`) on strings. While JavaScript all
 
 Open the console, and type in the following:
 
-* `true`
-* `false`
+- `true`
+- `false`
 
 Why would we dedicate an entire data type for just two values?
+
 <!-- .element: class="fragment" -->
-
----
-
-### Comparison operators
-
-* `===` strict equality
-
-```js
-1 === 1     // true
-3 === 10    // false
-
-3 === "Hello"  // false
-3 === "3"      // false
-
-"Ada" === "Ada"   // true
-"Ada" === "Alan"  // false
-"Alan" === "alan" // false
-```
-
----
-
-### Comparison operators
-
-* `!==` strict inequality
-
-```js
-3 !== 5           // true
-3 !== 3           // false
-1 !== "Cookies"   // true
-```
 
 ---
 
@@ -153,19 +136,51 @@ We can use `===` and `!==` to test for the equality and inequality of any 2 valu
 
 ---
 
+### Comparison operators
+
+- `===` strict equality
+
+```js
+1 === 1; // true
+3 === 10; // false
+
+3 === "Hello"; // false
+3 === "3"; // false
+
+"Ada" === "Ada"; // true
+"Ada" === "Alan"; // false
+"Alan" === "alan"; // false
+```
+
+---
+
+### Comparison operators
+
+- `!==` strict inequality
+
+```js
+3 !== 5; // true
+3 !== 3; // false
+1 !== "Cookies"; // true
+```
+
+---
+
 ### Small exercise
+
+<!-- .slide: style="font-size:80%" -->
 
 Use the equality comparison operators to generate boolean values for these questions:
 
-* is your favorite food Pizza?
-* are you 25 years old?
-* is "Friends" your favorite tv series?
-* is 42 your shoe size?
+- is your favorite food Pizza?
+- are you 25 years old?
+- is "Friends" your favorite tv series?
+- is 42 your shoe size?
 
 As an example for the first item on this list, my favorite food is Döner:
 
 ```js
-"Pizza" === "Döner"  // false
+"Pizza" === "Döner"; // false
 ```
 
 ---
@@ -174,72 +189,49 @@ As an example for the first item on this list, my favorite food is Döner:
 
 These are operators that we use for numbers:
 
-* `>` greater than
-* `<` less than
-* `>=` greater or equal
-* `<=` less or equal
+- `>` greater than
+- `<` less than
+- `>=` greater or equal
+- `<=` less or equal
 
 ---
 
 ```js
-1 > 0 // true
-1 > 5 // false
+1 > 0; // true
+1 > 5; // false
+
+10 < 20; // true
+10 < 5; // false
+
+42 >= 40; // true
+42 >= 42; // true
+42 >= 50; // false
 ```
-
-```js
-10 < 20 // true
-10 < 5 // false
-
-```
-<!-- .element: class="fragment" -->
-
-
-```js
-42 >= 40 // true
-42 >= 42 // true
-42 >= 50 // false
-```
-<!-- .element: class="fragment" -->
-
 
 ---
 
 ### Comparison operators
 
-* `===` strict equality
-* `!==` strict inequality
-* `>` greater than
-* `<` less than
-* `>=` greater or equal
-* `<=` less or equal
+- `===` strict equality
+- `!==` strict inequality
+- `>` greater than
+- `<` less than
+- `>=` greater or equal
+- `<=` less or equal
 
 All of these only return `true` or `false`
 
 ---
 
-### Summary
-
-So far, we learned how to enter data and how to use operators to derive new data.
-
-But when reading the code we wrote, we won't quite understand it later:
-
-```js
-4 * 8
-32 / 2
-```
-
-What do you think these numbers mean?
-
----
-
 <!-- .slide: id="variables" -->
+
 # Variables
 
 ---
 
 ### Variable
 
-A pointer to value.
+A variable is a pointer to value
 
 ```js
 let price = 5;
@@ -247,6 +239,7 @@ let name = "John";
 ```
 
 ![Variable](images/variables.jpg)
+
 <!-- .element: style="text-align:center; height: 400px" -->
 
 ---
@@ -263,6 +256,7 @@ let hasKids = false;
 ```
 
 Can you guess how we can define a variable?
+
 <!-- .element: class="fragment" -->
 
 ---
@@ -270,15 +264,16 @@ Can you guess how we can define a variable?
 ### How do we define a variable?
 
 We write:
-* `let`
+
+- `let`
 <!-- .element: class="fragment" -->
-* the variable name
+- the variable name
 <!-- .element: class="fragment" -->
-* `=`
+- `=`
 <!-- .element: class="fragment" -->
-* the value we want
+- the value we want
 <!-- .element: class="fragment" -->
-* `;`
+- `;`
 <!-- .element: class="fragment" -->
 
 ---
@@ -288,6 +283,7 @@ We write:
 Adding semicolon after statements in JavaScript is optional.
 
 It's often considered good practice and can prevent unexpected behavior. All code in this course uses semicolons.
+
 <!-- .element: class="fragment" -->
 
 ---
@@ -295,29 +291,34 @@ It's often considered good practice and can prevent unexpected behavior. All cod
 ### Variables are variable
 
 You can change the value of a variable using the assignment operator (`=`):
+
 <!-- .element: class="fragment" -->
 
 ```js
-let temperature = 24;   // define a variable, initialize it to 24
-temperature = 30;       // assign a new value (30) to the variable
-temperature = 23;       // now temperature is 23
+let temperature = 24; // define a variable, initialize it to 24
+temperature = 30; // assign a new value (30) to the variable
+temperature = 23; // now temperature is 23
 ```
+
 <!-- .element: class="fragment" -->
 
 We define a variable once, then we can change it as often as needed.
+
 <!-- .element: class="fragment" -->
 
 ---
 
 ### try it!
 
+<!-- .slide: style="font-size:80%" -->
+
 Create some variables:
 
-* one for your full name
-* one for your age
-* one for your favorite city
-* one for whether you can speak German or not
-* and anything else you can think of :)
+- one for your full name
+- one for your age
+- one for your favorite city
+- one for whether you can speak German or not
+- and anything else you can think of :)
 
 In the JavaScript console, enter the name of the variable. Do you see its value?
 
@@ -334,33 +335,36 @@ let pricePerTicket = 8;
 let friends = 3;
 let totalPrice = friends * pricePerTicket;
 ```
+
 <!-- .element: class="fragment" -->
 
 ---
 
 ### Why do we use variables?
 
-We use variables
+We use variables:
 
-* to give names (meaning) to values. "42" could mean a person’s age or shoe size.
+- to give names (meaning) to values. "42" could mean a person’s age or shoe size.
 <!-- .element: class="fragment" -->
-* for reuse and flexibility. We define the variable once with a value, and use it often.
+- for reuse and flexibility. We define the variable once with a value, and use it more than once.
 <!-- .element: class="fragment" -->
 
 ---
 
 ### Variable names
 
-* You can use letters, numbers, and underscore `_` (spaces are *not* allowed!)
-* Variable name cannot start with a number.
+- You can use letters, numbers, and underscore `_` (spaces are _not_ allowed!)
+- A variable name cannot start with a number
 
 Valid variable names:
+
 ```js
 let element = 3;
 let element3 = 5;
 ```
 
 Invalid variable names:
+
 ```js
 let 2squared = 4;
 let element-1 = 0;
@@ -395,9 +399,9 @@ In this course, and JavaScript in general, we use 'camelCase':
 Variable names are case sensitive:
 
 ```js
-let name = 'John';
-let Name = 'John';
-let NAME = 'John';
+let name = "John";
+let Name = "John";
+let NAME = "John";
 ```
 
 These are 3 different variables.
@@ -406,19 +410,24 @@ These are 3 different variables.
 
 ### Practice
 
+<!-- .slide: style="font-size:80%" -->
+
 Let's say we want to go to the cinema with some friends (choose any number).
 
 How many people are going to the cinema in total? Create a variable for that.
+
 <!-- .element: class="fragment" -->
 
 A ticket to watch the movie costs 12.5€, create a variable for this as well.
+
 <!-- .element: class="fragment" -->
 
 Create a new variable that contains how much we have to pay in total.
+
 <!-- .element: class="fragment" -->
 
-
 Ada and Alan volunteered to pay for the tickets. Use JavaScript to compute how much each has to pay.
+
 <!-- .element: class="fragment" -->
 
 ---
@@ -433,7 +442,7 @@ Ada and Alan volunteered to pay for the tickets. Use JavaScript to compute how m
 ### Solution for bonus
 
 ```js
-let totalPrice = 50; // from the task above
+let totalPrice = 50; // result from the first task
 let discount = 0.1; // 10 percent discount
 let discountedPriceMultiplier = 1 - discount;
 let discountedPrice = totalPrice * discountedPriceMultiplier;
