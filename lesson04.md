@@ -73,7 +73,7 @@ JavaScript ignores everything after a double slash `//` until the end of the lin
 ```js
 let x = 41; // this is ignored
 x = 42;     // you can write anything
-// Remember to document the why,
+// As a good practice, document the why,
 // not the what!
 ```
 
@@ -168,9 +168,11 @@ What does the code below show on the HTML page?
 
 ```js
 let language = "German";
+
 if (language === "German") {
   document.body.textContent = "Guten Tag";
 }
+
 if (language === "French") {
   document.body.textContent = "Bonjour";
 }
@@ -187,12 +189,15 @@ What does the code below show on the HTML page?
 
 ```js
 let language = "Spanish";
+
 if (language === "German") {
   document.body.textContent = "Guten Tag";
 }
+
 if (language === "French") {
   document.body.textContent = "Bonjour";
 }
+
 if (language !== "German" && language !== "French") {
   document.body.textContent = "Good day";
 }
@@ -223,12 +228,15 @@ All variables defined in code blocks only exist inside the block (technical term
 
 ```js
 let name = "John Doe";
+
 if (name === "John Doe") {
   let greeting = "Hi dude";
 }
+
 if (name === "Mary Doyle") {
   let greeting = "Hello my dear";
 }
+
 document.body.textContent = greeting; // ERROR!
 ```
 
@@ -241,12 +249,15 @@ Correct solution:
 ```js
 let name = "John Doe";
 let greeting;
+
 if (name === "John Doe") {
   greeting = "Hi dude";
 }
+
 if (name === "Mary Doyle") {
   greeting = "Hello my dear";
 }
+
 document.body.textContent = greeting; // "Hi dude"
 ```
 
@@ -258,6 +269,7 @@ What does the code below show on the HTML page?
 
 ```js
 let food = "broccoli";
+
 if (food === "pizza") {
   document.body.textContent = "yum yum";
 }
@@ -275,9 +287,11 @@ What does it output?
 
 ```js
 let age = 42;
+
 if (age >= 18) {
   document.body.textContent = "you are allowed to drive a car";
 }
+
 if (age < 18) {
   document.body.textContent = "you are not allowed to drive a car";
 }
@@ -289,7 +303,7 @@ Solution: First condition is `true`, so it outputs "you are allowed to drive a c
 
 ---
 
-### Task
+### Task 1
 
 Define a variable `hour` and set it to `17`. Make an `if` statement that outputs `good day` to the body of your page, if `hour` is less than 18.
 
@@ -297,26 +311,31 @@ Now change `hour` to `19` and run the code again. What changed?
 
 ---
 
-### Task
+### Task 2
 
-Abdo invented a game where the player with the highest score wins. The score is the player's shoe size plus five multiplied by the number of times you ate pizza in the last month.
+Annie invented a game where the player with the highest score wins. The score is the player's shoe size plus five multiplied by the number of times you ate pizza in the last month.
 
 1. Create variables for the shoe size and number of pizza eaten for you and a person next to you
 1. Calculate the scores for you and your neighbor
 1. Decide who wins, output the winner and their score to the `body` of your HTML. Remember: there can be a draw (both players with the same score).
 
+<!-- .slide: style="font-size:80%" -->
+
 ---
 
-### Solution
+### Solution - Task 1
 
 ```js
 let hour = 17;
+
 if (hour < 18) {
   document.body.textContent = "good day";
 }
 ```
 
 ---
+
+### Solution - Task 2
 
 ```js
 let player1ShoeSize = 42;
