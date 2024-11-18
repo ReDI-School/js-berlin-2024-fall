@@ -29,9 +29,9 @@ What did we talk about last lesson?
 Number:
 
 ```js
-42;
+42
 
-3.1415;
+3.1415
 ```
 
 We can also do computation, using operators:
@@ -39,11 +39,11 @@ We can also do computation, using operators:
 <!-- .element: class="fragment" -->
 
 ```js
-1 + 1;
+1 + 1
 
-10 / 5;
+10 / 5
 
-5 ** 3;
+5 ** 3
 ```
 
 <!-- .element: class="fragment" -->
@@ -55,9 +55,9 @@ We can also do computation, using operators:
 String:
 
 ```js
-"Alan";
+"Alan"
 
-"Berlin";
+'Berlin'
 ```
 
 ---
@@ -67,7 +67,7 @@ String:
 The addition operator (`+`) can be used to combine (concatenate) two strings:
 
 ```js
-"a" + "b"; // results: "ab"
+"a" + "b" // results: "ab"
 ```
 
 ---
@@ -77,9 +77,9 @@ The addition operator (`+`) can be used to combine (concatenate) two strings:
 The addition operator can be used on Strings and Numbers:
 
 ```js
-1 + 1; // is 2
+1 + 1 // is 2
 
-"hello" + " world"; // is "hello world"
+"hello" + " world" // is "hello world"
 ```
 
 ---
@@ -87,9 +87,9 @@ The addition operator can be used on Strings and Numbers:
 ### Importance of data types
 
 ```js
-1 + 1; // is 2
+1 + 1 // is 2
 
-"1" + "1"; // is "11"
+"1" + "1" // is "11"
 ```
 
 It is important to select the appropriate data type for your data, as the behavior of operators in JavaScript varies depending on the data type used.
@@ -141,15 +141,15 @@ We can use `===` and `!==` to test for the equality and inequality of any 2 valu
 - `===` strict equality
 
 ```js
-1 === 1; // true
-3 === 10; // false
+1 === 1 // true
+3 === 10 // false
 
-3 === "Hello"; // false
-3 === "3"; // false
+3 === "Hello" // false
+3 === "3" // false
 
-"Ada" === "Ada"; // true
-"Ada" === "Alan"; // false
-"Alan" === "alan"; // false
+"Ada" === "Ada" // true
+"Ada" === "Alan" // false
+"Alan" === "alan" // false
 ```
 
 ---
@@ -159,9 +159,9 @@ We can use `===` and `!==` to test for the equality and inequality of any 2 valu
 - `!==` strict inequality
 
 ```js
-3 !== 5; // true
-3 !== 3; // false
-1 !== "Cookies"; // true
+3 !== 5 // true
+3 !== 3 // false
+1 !== "Cookies" // true
 ```
 
 ---
@@ -180,7 +180,7 @@ Use the equality comparison operators to generate boolean values for these quest
 As an example for the first item on this list, my favorite food is Döner:
 
 ```js
-"Pizza" === "Döner"; // false
+"Pizza" === "Döner" // false
 ```
 
 ---
@@ -197,15 +197,15 @@ These are operators that we use for numbers:
 ---
 
 ```js
-1 > 0; // true
-1 > 5; // false
+1 > 0 // true
+1 > 5 // false
 
-10 < 20; // true
-10 < 5; // false
+10 < 20 // true
+10 < 5 // false
 
-42 >= 40; // true
-42 >= 42; // true
-42 >= 50; // false
+42 >= 40 // true
+42 >= 42 // true
+42 >= 50 // false
 ```
 
 ---
