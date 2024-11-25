@@ -92,7 +92,7 @@ We can use the `<script>` tag to include JavaScript code:
 <body>
   Test Test Test
   <script>
-    1 + 1;
+    1 + 1
   </script>
 </body>
 ```
@@ -149,8 +149,8 @@ These operators work on `boolean` values:
 Logical NOT negates a boolean:
 
 ```javascript
-!true; // false
-!false; // true
+!true // false
+!false // true
 ```
 
 ---
@@ -211,10 +211,10 @@ let canWatchMovie = reviewedSlides && didHomework;
 ### Logical AND
 
 ```js
-true && true; // true
-true && false; // false
-false && true; // false
-false && false; // false
+true && true // true
+true && false // false
+false && true // false
+false && false // false
 ```
 
 ---
@@ -251,10 +251,10 @@ let shouldDoSports = ateCookie || ateChocolate;
 ### Logical OR ||
 
 ```js
-true || true; // true
-true || false; // true
-false || true; // true
-false || false; // false
+true || true // true
+true || false // true
+false || true // true
+false || false // false
 ```
 
 ---
@@ -286,7 +286,7 @@ What would be the value of `canApply` if `knowsGerman` is `true`?
 What happens when there's more than one of the **same** operator in one line?
 
 ```js
-1 / 2 / 2;
+1 / 2 / 2
 ```
 
 Answer: 0.25 <!-- .element: class="fragment" -->
@@ -303,7 +303,7 @@ consult [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/
 What's the result?
 
 ```js
-2 ** 3 ** 2;
+2 ** 3 ** 2
 ```
 
 Answer: 512 (exponentiation is right-to-left associative!) <!-- .element: class="fragment" -->
@@ -315,8 +315,8 @@ Answer: 512 (exponentiation is right-to-left associative!) <!-- .element: class=
 Note: Round parentheses (or "grouping operator") `()` can be used to group expressions:
 
 ```js
-(2 ** 3) ** 2; // 64
-2 ** (3 ** 2); // 512
+(2 ** 3) ** 2 // 64
+2 ** (3 ** 2) // 512
 ```
 
 ---
@@ -326,7 +326,7 @@ Note: Round parentheses (or "grouping operator") `()` can be used to group expre
 What happens if we mix **different** operators in one line? What could the result be?
 
 ```js
-2 + 2 * 2;
+2 + 2 * 2
 ```
 
 Result: `6` <!-- .element: class="fragment" -->
@@ -343,8 +343,8 @@ Result: `6` <!-- .element: class="fragment" -->
 Parentheses have the highest precedence (21) and always win:
 
 ```js
-(2 + 2) * 2; // 8
-2 + (2 * 2); // 6
+(2 + 2) * 2 // 8
+2 + (2 * 2) // 6
 ```
 
 When in doubt, use parentheses!
@@ -394,9 +394,9 @@ let x = 5 < 6 < 7;
 Let's break it down:
 
 ```js
-5 < 6 < 7;
-(5 < 6) < 7; // 5 < 6 is true
-true < 7; // pointless comparison!
+5 < 6 < 7
+(5 < 6) < 7 // 5 < 6 is true
+true < 7 // pointless comparison!
 ```
 
 Comparing a boolean to a number makes no sense. Do not chain comparison operators.
@@ -408,12 +408,12 @@ Comparing a boolean to a number makes no sense. Do not chain comparison operator
 What does the following return?
 
 ```js
-5 === 5 === 5;
+5 === 5 === 5
 ```
 
 ```js
-(5 === 5) === 5;
-true === 5; // Pointless. Returns false
+(5 === 5) === 5
+true === 5 // Pointless. Returns false
 ```
 
 <!-- .element: class="fragment" -->
