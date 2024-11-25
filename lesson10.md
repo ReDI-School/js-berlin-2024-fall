@@ -14,7 +14,7 @@ Basic button with click handler:
 <button onclick="handleButtonClick()">Click me!</button>
 ```
 
-In javascript:
+In Javascript:
 
 ```js
 function handleButtonClick() {
@@ -24,9 +24,11 @@ function handleButtonClick() {
 
 ---
 
-### Recap: DOM object
+### Recap - In other words: DOM object
 
-`document.body` is an object, we can change the (CSS) style properties of it:
+DOM stands for **Document Object Model**, and it is what we have been using to manipulate HTML in Javascript.
+
+`document.body` is an object and we can change the (CSS) style properties of it:
 
 ```js
 // change the page background color:
@@ -89,7 +91,7 @@ You are tasked with creating a basic calculator application that can perform add
 
 Provide two input fields for operands (Operand 1 and Operand 2), a dropdown menu for the operator (+ and -), a "Calculate" button, and a div element for displaying the result.
 
-When the user clicks the "Calculate" button, retrieve the values from the input fields and the selected operator from the dropdown menu.
+When the user clicks the "Calculate" button, retrieve the values from the input fields and the selected operator from the dropdown menu. >>
 
 ---
 
