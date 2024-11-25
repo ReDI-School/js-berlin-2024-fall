@@ -149,10 +149,6 @@ let book = {
 };
 ```
 
----
-
-### Objects: examples
-
 ```js
 let car = {
   make: 'Volkswagen',
@@ -160,6 +156,7 @@ let car = {
   modelYear: 2005,
 };
 ```
+<!-- .element: class="fragment" -->
 
 ---
 
@@ -240,7 +237,7 @@ let car = {
 console.log('The car has ' + car.wheels + ' wheels');
 ```
 
-* What's the result?
+* What's the output in the console?
 
 ```js
 The car has undefined wheels
@@ -338,7 +335,7 @@ You've been using objects and methods this whole time!
 
 ---
 
-### Task: part 1
+### Task 1
 
 Start with the `myInfo` object you created in the earlier task that contains your name and favorite food.
 
@@ -353,7 +350,7 @@ introducePerson(myInfo);
 
 ---
 
-### Task: part 2
+### Task 2
 
 Now create another object called `friendInfo` with the same properties as `myInfo`.
 
@@ -368,7 +365,7 @@ introducePerson(friendInfo);
 
 ---
 
-### Task: part 3
+### Task 3
 
 Create a function that takes two "person" objects. Compare their ages, then use `console.log` to print who is older of the two.
 
