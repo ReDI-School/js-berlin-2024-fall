@@ -56,12 +56,16 @@ We need a way of printing information to the console when our code runs, for deb
 
 ```js
 let name = "Alan";
+
 console.log(name);
+
 let shouldSayHello = true;
 if (shouldSayHello) {
   console.log("Hello");
 }
 ```
+
+Give it a try yourself! Type `console.log("Hello, world")` in the browser.
 
 ---
 
@@ -73,6 +77,7 @@ Very often, we would like to conditionally execute something, and otherwise exec
 if (budget >= 60) {
   console.log("Let's go to cinema!");
 }
+
 if (budget < 60) {
   console.log("Let's go to the park!");
 }
@@ -96,6 +101,8 @@ if (condition) {
 
 ### If-Else
 
+Transforming the previous code into a if-else statement:
+
 ```js
 if (budget >= 60) {
   console.log("Let's go to cinema!");
@@ -108,12 +115,13 @@ if (budget >= 60) {
 
 ### Quiz
 
-Can you change the following code to `if..else`?
+Can you change the following code to `if...else`?
 
 ```js
 if (temperature > 25) {
   console.log("Go swimming");
 }
+
 if (temperature <= 25) {
   console.log("Go biking");
 }
@@ -137,7 +145,7 @@ But what if we want to check multiple exclusive conditions?
 
 ---
 
-### If...Else-If...Else example
+### If...Else If...Else
 
 ```js
 if (day === "Saturday") {
@@ -149,7 +157,7 @@ if (day === "Saturday") {
 }
 ```
 
-Only one code block is executed in the `if..else if..else`. To determine which block, JavaScript will evaluate the conditions from top to bottom. The first condition that evaluates to true determines the block to be executed. All the other code blocks are ignored.
+Only one code block is executed in the `if..else if..else`. To determine which block, JavaScript will evaluate the conditions from **top to bottom**. The **_first_ condition that evaluates to true** determines the block to be executed. All the other code blocks are ignored.
 
 ---
 
@@ -212,7 +220,7 @@ if (temperature > 30) {
 ### Data Type: Undefined
 
 - **Undefined** has only one value: `undefined`
-- It indicates the unintentional absence of any value
+- It indicates the **unintentional** absence of any value
 - `undefined` is automatically assigned to uninitialized variables
 
 ---
@@ -245,6 +253,8 @@ console.log(x === null); // true
 
 ### Compound assignment operators
 
+Compound assignment operators are shorter ways of applying an operator on the variable and assigning the result back to the variable.
+
 | Compound operator | Same as       |
 | ----------------- | ------------- |
 | `x += 42`         | `x = x + 42`  |
@@ -253,7 +263,6 @@ console.log(x === null); // true
 | `x *= 42`         | `x = x * 42`  |
 | `x **= 42`        | `x = x ** 42` |
 
-Compound assignment operators are shorter ways of applying an operator on the variable and assigning the result back to the variable.
 
 ---
 
@@ -294,27 +303,41 @@ x is 24
 
 ### Recap: rules of if, else if, else
 
+<!-- .slide: style="font-size:80%" -->
+
+```js
+if (condition1) {
+  // runs if condition1 is true
+} else if (condition2) {
+  // runs if condition2 is true
+} else {
+  // runs if neither condition1 nor condition2 are true
+}
+```
+
 - JavaScript will go through the if/else-if/else statements from top to bottom.
-- In our example, it will check condition1, then condition2, then condition3...
-- If one of the conditions evaluates to true, JavaScript will execute it’s code block and skip every following `else if` and `else`!
+- In our example, it will check condition1, then condition2.
+- If one of the conditions evaluates to true, JavaScript will execute its code block and skip every following `else if` and `else`!
 
 ---
 
 ## Recap: Series of separate if statements
 
+<!-- .slide: style="font-size:80%" -->
+
 If we put a series of `if` statements one after the other, they will be evaluated independently of one another.
 
 ```js
 if (condition1) {
-  // do this if condition 1 is true
+  // do this if condition1 is true
 }
 if (condition2) {
-  // do this if condition 2 is true
-  // no matter what condition 1 was
+  // do this if condition2 is true
+  // no matter what condition1 was
 }
 if (condition3) {
-  // do this if condition 3 is true
-  // no matter what condition 1 or 2 was
+  // do this if condition3 is true
+  // no matter what condition1 or condition2 was
 }
 ```
 
@@ -322,7 +345,9 @@ if (condition3) {
 
 ### Task 1: Buying ice cream
 
-You have to go to the supermarket and buy ice-cream for your the party of your best friend.
+<!-- .slide: style="font-size:80%" -->
+
+You have to go to the supermarket and buy ice cream for the party of your best friend.
 
 Her instructions are:
 
@@ -339,13 +364,11 @@ let isMangoAvailable = false;
 let isHazelnutAvailable = true;
 ```
 
-<!-- .slide: style="font-size:80%" -->
-
 ---
 
 ### Task 2: Shopping time
 
-Let's go shopping. Create a variable containing the budget (try with `5`, `7`, `8` and `10`).
+Let's go shopping. Create a variable containing the budget (try with `5`, `7`, `8` and `10`). Let's buy products in the following order:
 
 - If we have enough money left, buy milk (2 EUR).
 - If we have enough money left, buy cheese (4 EUR).
