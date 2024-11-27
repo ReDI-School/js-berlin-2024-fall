@@ -15,18 +15,21 @@ What do you remember so far?
 ### Recap: data types
 
 Number:
+
 ```js
 42
 -3.1415
 ```
 
 String:
+
 ```js
 "Alan"
 'Berlin'
 ```
 
 Boolean:
+
 ```js
 true
 false
@@ -36,35 +39,37 @@ false
 
 ### Recap operators
 
-| Group | Operators | Example |
-| ----- | --------- | ------- |
-| Numerical Operators | `+` `-` `*` `/` `**` | `5 + 4 * 3`<br/>`7 / 2 - 2`<br/>`"Hello" + " World"` |
-| Comparison Operators | `===` `!==` `<` `>` `<=` `>=` | `30 !== 25`<br/>`20 >= 18` |
+| Group                | Operators                     | Example                                              |
+| -------------------- | ----------------------------- | ---------------------------------------------------- |
+| Numerical Operators  | `+` `-` `*` `/` `**`          | `5 + 4 * 3`<br/>`7 / 2 - 2`<br/>`"Hello" + " World"` |
+| Comparison Operators | `===` `!==` `<` `>` `<=` `>=` | `30 !== 25`<br/>`20 >= 18`                           |
 
 ---
 
 ### Lesson Overview
 
-* VSCode
-* Logical Operators
+- VSCode
+- Logical Operators
 
 ---
 
 # VSCode
 
-So far, we've used the JavaScript console to enter JavaScript code. This is great for trying small snippets of code (REPL: Read-Eval-Print-Loop).
+So far, we've used the JavaScript console to enter JavaScript code. This is great for trying small snippets of code.
 
 But what if we want to write something more complex, e.g. more than one line?
 
 ---
 
+<!-- .slide: style="font-size:80%" -->
+
 Create a new HTML page and open it in the browser, for example:
 
 1. Open VSCode
-1. Click on *File* -> *New File*
-1. Click on *File* -> *Save File*, save it as e.g. `index.html`
-1. Enter `!` and confirm with the *Enter* key to create a skeleton HTML file
-1. Right click on the tab with the name `index.html`, choose *Copy Path*
+1. Click on _File_ -> _New File_
+1. Click on _File_ -> _Save File_, save it as e.g. `index.html`
+1. Enter `!` and confirm with the _Enter_ key to create a skeleton HTML file
+1. Right click on the tab with the name `index.html`, choose _Copy Path_
 1. Paste the path to the browser
 
 ---
@@ -73,7 +78,7 @@ Your HTML body now looks something like this:
 
 ```html
 <body>
-    Test Test Test
+  Test Test Test
 </body>
 ```
 
@@ -85,10 +90,10 @@ We can use the `<script>` tag to include JavaScript code:
 
 ```html
 <body>
-    Test Test Test
-    <script>
-        1 + 1
-    </script>
+  Test Test Test
+  <script>
+    1 + 1
+  </script>
 </body>
 ```
 
@@ -100,10 +105,10 @@ The browser defines a global variable `document.body.textContent` for us. We can
 
 ```html
 <body>
-    Test Test Test
-    <script>
-        document.body.textContent = "Hello from JavaScript";
-    </script>
+  Test Test Test
+  <script>
+    document.body.textContent = "Hello from JavaScript";
+  </script>
 </body>
 ```
 
@@ -131,9 +136,11 @@ Change the amount of friends or the price for a ticket, then reload your page. D
 
 These operators work on `boolean` values:
 
-* `&&` AND
-* `||` OR
-* `! ` NOT
+| Symbol | Operator |
+| ------ | -------- |
+| `&&`   | AND      |
+| `\|\|` | OR       |
+| `! `   | NOT      |
 
 ---
 
@@ -142,7 +149,7 @@ These operators work on `boolean` values:
 Logical NOT negates a boolean:
 
 ```javascript
-!true  // false
+!true // false
 !false // true
 ```
 
@@ -204,10 +211,10 @@ let canWatchMovie = reviewedSlides && didHomework;
 ### Logical AND
 
 ```js
-true  && true   // true
-true  && false  // false
-false && true   // false
-false && false  // false
+true && true // true
+true && false // false
+false && true // false
+false && false // false
 ```
 
 ---
@@ -244,10 +251,10 @@ let shouldDoSports = ateCookie || ateChocolate;
 ### Logical OR ||
 
 ```js
-true  || true   // true
-true  || false  // true
-false || true   // true
-false || false  // false
+true || true // true
+true || false // true
+false || true // true
+false || false // false
 ```
 
 ---
@@ -264,7 +271,13 @@ let canApply = knowsGerman || knowsEnglish;
 // what's the value of canApply?
 ```
 
-`false` <!-- .element: class="fragment" -->
+`false`
+
+<!-- .element: class="fragment" -->
+
+What would be the value of `canApply` if `knowsGerman` is `true`?
+
+<!-- .element: class="fragment" -->
 
 ---
 
@@ -280,6 +293,7 @@ Answer: 0.25 <!-- .element: class="fragment" -->
 
 Most operators are left-to-right associative. If in doubt,
 consult [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence)
+
 <!-- .element: class="fragment" -->
 
 ---
@@ -301,8 +315,8 @@ Answer: 512 (exponentiation is right-to-left associative!) <!-- .element: class=
 Note: Round parentheses (or "grouping operator") `()` can be used to group expressions:
 
 ```js
-(2 ** 3) ** 2  // 64
-2 ** (3 ** 2)  // 512
+(2 ** 3) ** 2 // 64
+2 ** (3 ** 2) // 512
 ```
 
 ---
@@ -319,18 +333,18 @@ Result: `6` <!-- .element: class="fragment" -->
 
 ---
 
-* JavaScript supports precedence (priority) for operators
-* Operators with higher precedence are evaluated before operators with lower precedence
-* Full List: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence
-* Multiplication (15) has higher precedence than addition (14) - multiplication wins
+- JavaScript supports precedence (priority) for operators
+- Operators with higher precedence are evaluated before operators with lower precedence
+- Full List: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence
+- Multiplication (15) has higher precedence than addition (14) - multiplication wins
 
 ---
 
 Parentheses have the highest precedence (21) and always win:
 
 ```js
-(2 + 2) * 2   // 8
-2 + (2 * 2)   // 6
+(2 + 2) * 2 // 8
+2 + (2 * 2) // 6
 ```
 
 When in doubt, use parentheses!
@@ -373,7 +387,7 @@ What is `x`?
 let x = 5 < 6 < 7;
 ```
 
-* Answer: It's pointless  <!-- .element: class="fragment" -->
+- Answer: It's pointless <!-- .element: class="fragment" -->
 
 ---
 
@@ -381,8 +395,8 @@ Let's break it down:
 
 ```js
 5 < 6 < 7
-(5 < 6) < 7   // 5 < 6 is true
-true < 7      // pointless comparison!
+(5 < 6) < 7 // 5 < 6 is true
+true < 7 // pointless comparison!
 ```
 
 Comparing a boolean to a number makes no sense. Do not chain comparison operators.
@@ -399,14 +413,16 @@ What does the following return?
 
 ```js
 (5 === 5) === 5
-true === 5         // Pointless. Returns false
+true === 5 // Pointless. Returns false
 ```
+
+<!-- .element: class="fragment" -->
 
 ---
 
-### Task
+### Task 1
 
-A job add requires JavaScript or Python knowledge. Can you finish the code below so it will work with any combination of `true` or `false` in the `canProgramXxx` variables?
+A job ad requires JavaScript or Python knowledge. Can you finish the code below so it will work with any combination of `true` or `false` in the `canProgramXxx` variables?
 
 ```js
 let canProgramJavaScript = true;
@@ -417,13 +433,14 @@ document.body.textContent = canApply;
 ```
 
 BONUS: The job also requires German language skills. Can you extend the code above?
+
 BONUS: If the developer knows both JavaScript and Python, they're overqualified and can't apply. Extend the code.
 
 <!-- .slide: style="font-size:80%" -->
 
 ---
 
-### Task
+### Task 2
 
 ```js
 let pricePerTicket = 8;
@@ -431,18 +448,18 @@ let friends = 3;
 let totalPrice = friends * pricePerTicket;
 ```
 
-* Copy/paste this code
-* Add a new variable that points to the price of popcorn (7 EUR).
-* Can you add the price for one popcorn to the `totalPrice` variable?
-* Create a new variable containing your total budget (30 EUR).
-* Create a new variable that is `true` if the budget is high enough for cinema, `false` otherwise.
-* BONUS: Create a new variable `isCheap` that is `true` if the price of popcorn is less than 5 EUR and the price for a ticket is less than 7 EUR.
+- Copy/paste this code
+- Add a new variable that points to the price of popcorn (7 EUR).
+- Can you add the price for one popcorn to the `totalPrice` variable?
+- Create a new variable containing your total budget (30 EUR).
+- Create a new variable that is `true` if the budget is high enough for cinema, `false` otherwise.
+- BONUS: Create a new variable `isCheap` that is `true` if the price of popcorn is less than 5 EUR and the price for a ticket is less than 7 EUR.
 
 <!-- .slide: style="font-size:80%" -->
 
 ---
 
-### Solution
+### Task 1 - Solution
 
 A job add requires JavaScript or Python knowledge. Can you finish the code below?
 
@@ -455,7 +472,7 @@ let canApply = canProgramJavaScript || canProgramPython;
 
 ---
 
-### Bonus solution
+### Task 1 - Bonus - Solution
 
 ```js
 let canProgramJavaScript = true;
@@ -464,6 +481,7 @@ let canSpeakGerman = false;
 
 let canProgram = canProgramJavaScript || canProgramPython;
 let canApply = canProgram && canSpeakGerman;
+
 // Bonus 2
 let isOverqualified = canProgramJavaScript && canProgramPython;
 canApply = canApply && !isOverqualified;
@@ -483,4 +501,3 @@ let isPopcornCheap = popcornPrice < 5;
 let isTicketCheap = pricePerTicket < 7;
 let isCheap = isPopcornCheap && isTicketCheap;
 ```
-
