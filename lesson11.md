@@ -26,7 +26,7 @@ However - even primitive data types can have properties in JavaScript. <!-- .ele
 
 ---
 
-### Example
+### Example - methods in strings and numbers
 
 ```js
 let greeting = "Hello";
