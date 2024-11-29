@@ -10,6 +10,14 @@ Lesson 6, Tuesday, 2024-10-01
 
 What are variables?
 
+```js
+let isWarm = true;
+let restaurantName = "Pizza Doe";
+```
+
+<!-- .element: class="fragment" -->
+
+
 ---
 
 ### Recap: Data
@@ -39,11 +47,11 @@ Which statements have we seen so far?
 
 ```js
 if (condition) {
-
+  // runs if condition is true
 } else if (anotherCondition) {
-
+  // runs if condition is false and anotherCondition is true
 } else {
-
+  // runs if neither condition nor anotherCondition are true
 }
 ```
 
@@ -56,6 +64,7 @@ What's the value of `y` after this code runs?
 ```js
 let x = 42;
 let y = 0;
+
 if (x === 42) {
     y = 1;
 } else if (x === 42) {
@@ -102,7 +111,8 @@ There are 3 mandatory parts in a function definition:
 ---
 
 The code in the function will only run when we _call_ the function.
-We can call the function like this, using a pair of open and closed parentheses:
+
+We can call the function like this, by typing its name followed by a pair of open and closed parentheses:
 
 ```js
 sayHello();
@@ -114,9 +124,9 @@ sayHello();
 
 It's important to distinguish between 2 parts when working with functions:
 
-1. function definition (also called function declaration)
+1. function definition (also called function **declaration**)
 <!-- .slide: id="functions" -->
-1. function execution (calling the function)
+1. function execution (**calling** the function)
 <!-- .slide: id="functions" -->
 
 ---
@@ -124,7 +134,7 @@ It's important to distinguish between 2 parts when working with functions:
 ### Function definition and execution
 
 ```js
-// this is the function definition.
+// this is the function definition
 function sayHello() {
   document.body.textContent = "Hello There!";
 }
@@ -142,6 +152,7 @@ A function can contain any kind of code:
 ```js
 function checkTemperature() {
   let temperature = 10;
+
   if (temperature < 0) {
     document.body.textContent = "it's cold outside";
   } else {
@@ -282,7 +293,7 @@ function sum(parameter1, parameter2, parameter3) {
 sum(1, 2, 3);
 ```
 
-Each argument will be assigned to the corresponding parameter in order, from left to right
+Each argument will be assigned to the corresponding parameter in **order**, from left to right
 
 ---
 
@@ -356,7 +367,7 @@ function describeWeather(temperature) {
 
 ---
 
-### Common mistakes
+### No return in function
 
 What is the value of the variable `number`?
 
@@ -371,6 +382,10 @@ console.log(number); // ???
 
 `undefined`! This function does not have a return value!
 <!-- .element: class="fragment" -->
+
+---
+
+It is _not_ mandatory to have a return value in a function, but do not forget to add it if you need to use its value outside of the function scope (block).
 
 ---
 
