@@ -39,9 +39,13 @@ What do we see on the console?
 
 ```js
 console.log(42);
+
 let x = 42;
+
 console.log(x);
+
 function y() { return 42; }
+
 console.log(y());
 ```
 
@@ -109,7 +113,9 @@ Let's create a webpage with three buttons, "red", "green", "blue".
 
 When you press the button, set `document.body.style.backgroundColor` to that color.
 
-BONUS:
+---
+
+### Task 1 - Bonus
 
 * When the color is already set to that color, set it back to empty string.
 * Solve the task with only one single `function` and one single `if/else` statement.
@@ -146,7 +152,7 @@ function randomMove() {
 
 ---
 
-### Bonus Bonus Task 4
+### Task 3 - Bonus
 
 Write to console how many times you won, lost, and tied.
 
@@ -192,6 +198,7 @@ JavaScript:
 
 ```js
 let clickCount = 0;
+
 function count() {
   clickCount += 1;
   console.log("You clicked " + clickCount + " times");
