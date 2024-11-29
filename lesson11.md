@@ -21,7 +21,6 @@ Lesson 11, Tuesday, 2024-10-22
 
 `object` is a non-primitive data type
 
-
 However - even primitive data types can have properties in JavaScript. <!-- .element: class="fragment" -->
 
 ---

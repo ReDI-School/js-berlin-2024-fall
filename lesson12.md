@@ -6,10 +6,32 @@ Lesson 12, Tuesday, 2024-10-29
 
 ---
 
+### Agenda
+
+- Recap
+- Arrays
+
+---
+
 ### Recap
 
 I want to change the value of a `div` HTML element on my
 webpage from "41" to "42". What are the steps involved?
+
+```html
+<div id="ultimateAnswer">41</div>
+```
+
+Answer:
+<!-- .element: class="fragment" -->
+
+```html
+<script>
+  let ultimateAnswer = document.getElementById("ultimateAnswer");
+  ultimateAnswer.textContent = 42;
+</script>
+```
+<!-- .element: class="fragment" -->
 
 ---
 
@@ -46,6 +68,7 @@ And any quantity:
 ```js
 // I only have one favorite food
 let favoriteFoods = ['Pizza'];
+
 // An array holding 26 letters of the alphabet
 let alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
 ```
@@ -54,9 +77,10 @@ let alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm',
 
 ### Analogy: Bookshelf
 
-A bookshelf can be thought of as an array of books
+A bookshelf can be thought of as an array of books.
 
-![bookshelf](images/bookshelf.jpg)
+<img src="images/bookshelf.jpg" alt="bookshelf" />
+
 
 ```js
 let books = ['Harry Potter', 'The Hobbit', 'Game of Thrones'];
@@ -110,7 +134,8 @@ The order of elements in the array matters!
 
 ### Bookshelf array
 
-![bookshelf](images/array_bookshelf_0.png)
+<img src="images/array_bookshelf_0.png" alt="Image representing the position of the books in the bookshelf, for example, Harry Potter would be index number 0, The Hobbit, number 1 and so on" />
+
 
 ---
 
@@ -161,7 +186,9 @@ let favoriteNumbersObject = {
 };
 ```
 
-Use object if you want to access elements by by key (string), use arrays if you want to access elements by its index (number).
+Use object if you want to access elements by **key** (string).
+
+Use arrays if you want to access elements by its **index** (number).
 
 ---
 
@@ -206,7 +233,7 @@ console.log(friends[2]); // "Bjarne"
 
 ### Common operations: array length
 
-We can get the length of an array with the `.length` property:
+We can get the length (total number of items) of an array with the `.length` property:
 
 ```js
 let friends = ['Ada', 'Alan', 'Brendan'];
@@ -231,9 +258,9 @@ console.log(friends[3]); // Bjarne
 
 ---
 
-### remove a value
+### Remove a value
 
-We can remove the last element from an array `.pop()`:
+We can remove the **last** element from an array `.pop()`:
 
 ```js
 let friends = ['Ada', 'Alan', 'Brendan', 'Bjarne'];
@@ -313,9 +340,11 @@ Write some JavaScript code that sets the `backgroundColor` of the three inner `d
 
 ### Task 3
 
+<!-- .slide: style="font-size:80%" -->
+
 Create an array of 4 friends.
 
-You and your friends want to go to the cinema (costs 7 euros each ticket). It is the birthday of the last friend, so you want to gift the ticket to them.
+You and your friends want to go to the cinema (where each ticket costs 7 euros). It is the birthday of the last friend, so you want to gift the ticket to them.
 
 Payment goes like this:
 
@@ -337,7 +366,7 @@ Congratulations Bjarne! You pay nothing
 
 ---
 
-### BONUS: Task 4
+### Bonus: Task 4
 
 Create a `function` called `cinemaCost` that takes an array of friends and outputs the same as in Task 3. The function must work for any amount of friends:
 
@@ -345,7 +374,9 @@ Create a `function` called `cinemaCost` that takes an array of friends and outpu
 function cinemaCost(friends) {
     // your code here
 }
+
 let friends = ['Ada', 'Alan', 'Brendan', 'Bjarne'];
+
 cinemaCost(friends);
 friends.push('Grace');
 cinemaCost(friends);
@@ -359,6 +390,7 @@ cinemaCost(friends);
 
 ```js
 let favoriteVeggies = ['eggplant', 'broccoli', 'potato'];
+
 favoriteVeggies[1] = 'carrot';
 favoriteVeggies.push('pepper');
 ```
@@ -370,6 +402,7 @@ favoriteVeggies.push('pepper');
 ```js
 let colorElement = document.getElementById("colors");
 let children = colorElement.children;
+
 children[0].style.backgroundColor = children[0].textContent;
 children[1].style.backgroundColor = children[1].textContent;
 children[2].style.backgroundColor = children[2].textContent;
